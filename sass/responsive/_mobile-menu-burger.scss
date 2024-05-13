@@ -1,0 +1,258 @@
+@media screen and (max-width: 360px) {
+
+    .h1-emploi {
+        margin-left: 7%;
+    }
+    
+    .navbar {
+        color: #3DAD5C;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+        position: fixed; 
+        top: 0;
+        right: 10px;
+        bottom: 0;
+        max-height: 50px;
+    }
+
+    .navbar.active {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+
+    .menu-line { // 3 LIGNES DU BURGER
+        width: 19px;
+        border-radius: 3px;
+        height: 4px;
+        background-color: #3DAD5C;
+        margin-top: 3px;
+    }
+    
+    .menu {
+        list-style-type: none;
+        padding: 0;
+        margin-left: 24%;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        margin-left: 0;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: rgba(255, 255, 255,);
+        z-index: 1;
+        background-size: cover;
+    }
+    
+    .menu.active {
+        max-height: 800px;
+        right: -10px;
+        transition: right 0.3s ease;
+        margin-right: 10px;
+        height: 100vh;
+    }
+
+    .menu a {
+        text-decoration: none;
+        color: #019961;
+    }
+    
+    .menu-item {
+        color: #3DAD5C;
+        opacity: 0; 
+        transition: opacity 0.3s ease;
+        margin-top: 10%;
+        text-align: center;
+        border-bottom: 1px solid;
+        height: 35px;
+        width: 300px;
+        margin-left: 8%;
+    }
+    
+    .menu.active .menu-item {
+        opacity: 1;
+    }
+
+    // animation 3 lignes into croix
+
+    .menu-icon.active .menu-line:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+        transition: 0.3s ease; 
+
+    }
+    
+    .menu-icon.active .menu-line:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .menu-icon.active .menu-line:nth-child(3) {
+        transform: translateY(-6px) rotate(-45deg);
+        transition: 0.3s ease; 
+    }
+
+    .menu-icon.closed .menu-line:nth-child(1) {
+        transform: none;
+        transition: 0.3s ease; 
+    }
+    
+    .menu-icon.closed .menu-line:nth-child(2) {
+        opacity: 1;
+    }
+    
+    .menu-icon.closed .menu-line:nth-child(3) {
+        transform: none;
+        transition: 0.3s ease; 
+    }
+
+    // fin animation lignes
+
+    // slide show
+
+    .slideshow-container {
+        top: 30px;
+        max-width: 300px;
+        position: relative;
+        margin: auto;
+        overflow: hidden;
+    }
+      
+    .slides {
+        display: flex;
+        transition: transform 0.3s ease;
+    }
+      
+    .slide {
+        flex: 0 0 100%;
+        height: 250px;
+    }
+      
+    .slide img {
+        margin-left: 30%;
+        width: 40%;
+        height: auto;
+    }
+      
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+    }
+      
+    .prev {
+        top: 90px;
+        left: -20px;
+        border: none;
+        color: #79C258 ;
+    }
+      
+    .next {
+        top: 90px;
+        right: -20px;
+        border: none;
+        color: #79C258;
+    }
+
+    .slide-text {
+        margin-top: 5%;
+        text-align: center;
+    }
+
+    .slideshow-container .slide-text .p-slides p {
+        font-size: large;
+        font-family: 'montserrat';
+    }
+
+    .buttons button {
+        width: 50px;
+        height: 50px;
+        background-color: white;
+        font-family: "montserrat", sans-serif;
+        font-size: 25px;
+    }
+
+    .dots {
+        display: flex;
+        justify-content: center;
+        margin-right: 15%;
+        margin-top: 20%;
+    }
+
+    .dot {
+        list-style: none;
+        width: 10px;
+        height: 10px;
+        background-color: rgba(1, 153, 97, 0.2); 
+        border-radius: 50%;
+        margin: 0 5px;
+        transition: background-color 0.3s;
+    }
+    
+    .dot.active {
+        background-color: #019961;
+    }
+
+    .logo {
+        width: 30%;
+   } 
+    // Disposition du menu en pied de page
+   .footer_nav ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    justify-content: flex-start;
+    }
+
+
+    // text copyright en pied de page
+    .footer_nav_copyright {
+    border-top: 3px solid #79C258;
+    }
+
+    // Distance entre pied de page et formulaire
+    .footer_nav {
+        margin-top: 60px;
+    }
+
+    // Style ligne menu en pied de page 
+    .footer_nav_list li{
+        margin: 8px 0;
+    }
+    // Style de chaque anchor en pied de page 
+    .footer_nav_item a {
+        padding-right: 10px;
+    }
+
+    .footer_nav_copyright {
+        border-top: 3px solid #79C258;
+        padding: 10px;
+    }
+    
+    // Style ligne menu en pied de page 
+    .footer_nav_list li{
+        list-style-type: none;
+    }
+    
+    // Style de chaque anchor en pied de page 
+    .footer_nav_item a {
+        text-decoration: none;
+        color: #3DAD5C;
+        font-weight: 400;
+    }
+
+    .footer_nav_list {
+        padding-left: 10px;
+    }
+
+}
