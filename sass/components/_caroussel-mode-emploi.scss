@@ -1,0 +1,58 @@
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    filter:brightness(0.7);
+}
+
+.ul-accueil {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    flex: 0 0 100%;
+    transition: transform 0.5s ease;
+}
+
+.slide.active {
+    display: block;
+}
+
+.image-header {
+    width: 100%;
+    height: 60%;
+}
+
+.btn-carousel {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    font-size: 2em;
+    color: white;
+    cursor: pointer;
+    z-index: 2;
+}
+
+#prev {
+    top: 28%;
+    left: 15%;
+}
+
+#next {
+    top: 28%;
+    right: 0;
+}
+
+.slide {
+    display: none;
+}
+
+.slide.active {
+    display: block;
+}
