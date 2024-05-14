@@ -13,8 +13,7 @@
         top: 0;
         right: 10px;
         bottom: 0;
-        max-height: 51px;
-
+        max-height: 50px;
     }
 
     .navbar.active {
@@ -120,7 +119,7 @@
 
     .slideshow-container {
         top: 30px;
-        max-width: 300px;
+        max-width: 320px;
         position: relative;
         margin: auto;
         overflow: hidden;
@@ -169,16 +168,10 @@
         text-align: center;
     }
 
-    .slideshow-container .slide-text .p-slides p {
-        font-size: large;
-        font-family: 'montserrat';
-    }
-
     .buttons button {
         width: 50px;
         height: 50px;
         background-color: white;
-        font-family: "montserrat", sans-serif;
         font-size: 25px;
     }
 
@@ -206,48 +199,36 @@
     .logo {
         width: 30%;
    } 
-    // Disposition du menu en pied de page
-   .footer_nav ul{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap; 
-    justify-content: flex-start;
-    }
+        // F O O T E R
 
-
-
-    // Distance entre pied de page et formulaire
-    .footer_nav {
-        margin-top: 60px;
-    }
-
-    // Style ligne menu en pied de page 
-    .footer_nav_list li{
-        margin: 8px 0;
-    }
-    // Style de chaque anchor en pied de page 
-    .footer_nav_item a {
-        padding-right: 10px;
-    }
-
-    .footer_nav_copyright {
-        padding: 10px;
-    }
+        .footer_nav ul {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
     
-    // Style ligne menu en pied de page 
-    .footer_nav_list li{
-        list-style-type: none;
-    }
+        .footer_nav_copyright {
+            font-size: 1.1em;
+            margin-top: 10px;  
+            margin-bottom: -20px; 
+        }
+        
+        .footer_nav_list li {
+            margin: 8px 0;
+            list-style-type: none;    
+        }
     
-    // Style de chaque anchor en pied de page 
-    .footer_nav_item a {
-        text-decoration: none;
-        color: #3DAD5C;
-        font-weight: 400;
-    }
-
-    .footer_nav_list {
-        padding-left: 10px;
-    }
+        .footer_nav_item a {
+            padding-right: 15px;
+            text-decoration: none;
+            color: #3DAD5C;
+        }
+    
+        .footer_nav_list {
+            max-width: 300px;
+            margin-top: 10%;
+            padding-left: 10px;
+        }
 
 }
