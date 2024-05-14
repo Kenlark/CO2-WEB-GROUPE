@@ -19,7 +19,7 @@
         flex-direction: column;
         align-items: flex-start;
         padding: 10px;
-        position: fixed;
+        position: absolute;
         top: 0;
         right: 10px;
         bottom: 0;
@@ -28,7 +28,7 @@
 
 
     .navbar.active {
-        position: fixed;
+        position: absolute;
         top: 0;
         left: 0;
         right: 0;
