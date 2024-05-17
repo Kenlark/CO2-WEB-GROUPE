@@ -1,0 +1,122 @@
+@media screen and (max-width: 360px) {
+
+
+    body {
+        font-family: 'Roboto';
+        font-size: large;
+    }
+
+    h1 {
+        font-family: 'Montserrat';
+        font-size: inherit;
+    }
+
+    // H E A D E R
+
+
+    // C O N T E N T
+
+    .imgacc {
+        display: block;
+        float: right;
+        width: 275px;
+    }
+
+    .txtacc {
+        display: block;
+        padding-top: 250px;
+        margin-left: 20px;
+        margin-right: 30px;
+    }
+
+    .h1acc {
+        font-size: 25px;
+    }
+
+    .pacc, .ou {
+        font-size: 16px;
+    }
+
+    .btnacc {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        align-items: center;
+        padding: 17px;
+    }
+
+    .commencer {
+        width: 300px;
+        height: 55px;
+        color: white;
+        background: linear-gradient(to top left, #019961, #B5D653);
+        border-radius: 25px;
+        border-style: none;
+        font-size: x-large;
+        box-shadow: 4px 4px 10px #79C258;
+        margin-bottom: -10px;
+        margin-top: -15px;
+    }
+
+    .commencer:hover {
+        background: #019961;
+        box-shadow: 4px 4px 10px #019961;
+        
+    }
+
+    .plus {
+        width: 300px;
+        height: 55px;
+        color: #3DAD5C;
+        background-color: white;
+        border-radius: 25px;
+        border-color: #3DAD5C;
+        border-style: solid;
+        border-width: 2px;
+        font-size: x-large;
+        margin-top: -10px;
+    }
+
+    .plus:hover {
+        color: white;
+        background-color: #019961;
+        box-shadow: 4px 4px 10px #019961;
+        transition: background-color 0.3s;
+    }
+
+    // F O O T E R
+
+    .footer_nav ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .footer_nav_copyright {
+        font-size: 1.1em;
+        margin-top: 10px;  
+        margin-bottom: -20px; 
+    }
+
+    .footer_nav {
+        margin-top: 20%;
+        border-top: 2px solid #79C258;
+    }
+    
+    .footer_nav_list li {
+        margin: 8px 0;
+        list-style-type: none;    
+    }
+
+    .footer_nav_item a {
+        padding-right: 15px;
+        text-decoration: none;
+        color: #3DAD5C;
+    }
+
+    .footer_nav_list {
+        max-width: 300px;
+        padding-left: 10px;
+    }
+}

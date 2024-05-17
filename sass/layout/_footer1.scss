@@ -1,0 +1,39 @@
+.footer5 {
+  height: 100px;
+  padding: 0 14px;
+  z-index: 99;
+  background-color: transparent;
+}
+
+.footer5 .footerWrapper5 {
+  background-color: transparent;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 0;
+  padding-left: 1vw;
+}
+
+.footer5 .footer-copyright-text5 {
+  font-size: 22px;
+  font-weight: 500;
+  padding-left: 14px;
+}
+
+.footer5 .footer_nav_list5 {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer5 .footer_nav_list5 .list-item5 {
+  list-style-type: none;
+  padding: 14px;
+}
+
+.footer5 .footer_nav_list5 .list-item5 a.menu-link5 {
+  text-decoration: none;
+  color: $color-darkgreen;
+  font-size: 22px;
+}

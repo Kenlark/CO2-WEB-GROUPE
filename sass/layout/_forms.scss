@@ -1,0 +1,65 @@
+/* Formulaire */
+form {
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+fieldset {
+    border: 0;
+}
+
+/*  fenetre de saisir de données */
+.boite_saisir {
+    border: none;
+    border-bottom: 2px solid rgb(202, 200, 200, 0.5);
+}
+p .distance-parcourue , p .jours-travailles {
+    font-size: 1em;
+    padding: 0%;
+  }
+
+.notice {
+    font-size: 0.7em;
+    width: 70%;   
+    margin-left: 15%;
+    margin-bottom: 20px;
+}
+
+
+/* Enlever les fleches : Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+// /* Firefox */
+// input[type="number"] {
+//   -moz-appearance: textfield;
+// }
+
+   
+ /* Style du bouton du formulaire */
+ .btn-mobile , .btn-desktop {
+    background-image: linear-gradient(to right, #B5D653 ,  #019961 );
+    color: white;
+    box-shadow: 0px 5px 10px #3DAD5C;
+    border-radius: 25px;
+    height: 40px;
+    margin-left: 15%;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+   }
+   
+.btn-mobile {
+    width: 300px; 
+    display: none;
+}
+.btn-desktop {
+    width: 200px;
+   }
+
+.btn-mobile:hover , .btn-desktop:hover {
+    background: #019961;
+    cursor: pointer;
+}  
+   

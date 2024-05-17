@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sass/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Mode d'emploi</title>
+</head>
+<body>
+    
+    <header>
+
+        <a href="accueil.html"><img src="IMAGES/image header.svg" alt="logo-header" class="image-header-logo"></a>
+        <div class="navbar">
+            <div class="menu-icon" onclick="toggleMenu()">
+              <div class="menu-line"></div>
+              <div class="menu-line"></div>
+              <div class="menu-line"></div>
+        </div>
+        </div>
+            <ul class="menu" id="menu">
+                <li class="menu-item"><a href="accueil.html"> <strong><span class="menu-taille">Acceuil</span></strong></a></li>
+                <li class="menu-item"><a href="mode-emploi.html"><span class="menu-taille">Mode d'emploi</span></a></li>
+                <li class="menu-item"><a href="#"><span class="menu-taille">Trouver un velib</span></a></li>
+                <li class="menu-item"><a href="calculateur.html"><span class="menu-taille">Calculateur</span></a></li>
+                <li class="menu-item"><a href="apropos.html"><span class="menu-taille">A propos</span></a></li>
+                <li class="menu-item"><a href="#"><span class="menu-taille">Contact</span></a></li>
+              </ul>
+
+              <div class="header_nav_emploi">
+                <ul class="header_nav_list_emploi">
+                    <li class="header_nav_item"><a href="accueil.html">Accueil</a> </li>
+                    <li class="header_nav_item"><a href="mode-emploi.html" >Mode d'emploi</a> </li> 
+                    <li class="header_nav_item"><a href="#" >Trouver un velib</a> </li>
+                    <li class="header_nav_item"><a href="calculateur.html" > Calculateur</a> </li> 
+                    <li class="header_nav_item"><a href="apropos.html" > A propos</a> </li>
+                    <li class="header_nav_item"><a href="#" > Contact </a> </li>
+                </ul>
+              </div>
+
+            <script src="burger.js"></script>
+
+        </header>
+
+        <div class="h1-emploi">
+        <h1>
+            Comment ça marche ?
+        </h1>
+        </div>
+      
+      <div class="circle4"></div>
+      <div class="circle5"></div>
+      <div class="circle6"></div>
+      <div class="circle7"></div>
+      <div class="circle8"></div>
+      <div class="circle9"></div>
+      
+        
+
+        <div class="slideshow-container">
+            <div class="slides">
+              <div class="slide">
+                <img src="IMAGES/Analyser-votre-site.svg" alt="Slide 1" class="slide1">
+                <div class="slide-text"><p class="p-slides"> <strong> Analyser votre site </strong></p> <p class="p-lorem"> Lorem ipsum dolor sit amet consectetur adipisicing elit ut aliquam, purus sit amet luctus venenatis.</p> </div>
+              </div>
+              <div class="slide TEST">
+                <img src="IMAGES/calculateur-magique.svg" alt="Slide 2" class="slide2">
+                <div class="slide-text"><p class="p-slides"><strong> Utiliser un calculateur magique </strong></p> <p class="p-lorem"> Odio euismod enim in eu, volutpat porttitor sed vestibulum condimentum eu interdum suscipit pharetra</p></div>
+                <div class="circle-slide"><div class="circle10"></div></div>
+              </div>
+              <div class="slide">
+                <img src="IMAGES/resultats.svg" alt="Slide 3" class="slide3">
+                <div class="slide-text"><p class="p-slides"> <strong> Obtenez les résultats </strong> </p> <p class="p-lorem"> In sodales id nisi, et montes, vulputate mauris ac praesent nunc, tristique proin lectus sed </p></div>
+              </div>
+            </div>
+
+            <div class="slides-desktop">
+              <div class="slide-desktop1">
+                <img src="IMAGES/Analyser-votre-site.svg" alt="Slide 1" class="slide1">
+                <div class="slide-text1"><p class="p-slides1"> <strong> Analyser votre site </strong></p> <p class="p-lorem1"> Lorem ipsum dolor sit amet consectetur adipisicing elit ut aliquam, purus sit amet luctus venenatis.</p> </div>
+              </div>
+              <div class="slide-desktop2">
+                <img src="IMAGES/calculateur-magique.svg" alt="Slide 2" class="slide2">
+                <div class="slide-text2"><p class="p-slides2"><strong> Utiliser un calculateur magique </strong></p> <p class="p-lorem2"> Odio euismod enim in eu, volutpat porttitor sed vestibulum condimentum eu interdum suscipit pharetra</p></div>
+              </div>
+              <div class="slide-desktop3">
+                <img src="IMAGES/resultats.svg" alt="Slide 3" class="slide3">
+                <div class="slide-text3"><p class="p-slides3"> <strong> Obtenez les résultats </strong> </p> <p class="p-lorem3"> In sodales id nisi, et montes, vulputate mauris ac praesent nunc, tristique proin lectus sed </p></div>
+              </div>
+            </div>
+
+            <div class="buttons">
+            <button class="prev" onclick="plusSlides(-1)">&#10096;</button>
+            <button class="next" onclick="plusSlides(1)">&#10097;</button>
+            </div>
+            <ul class="dots">
+              <li class="dot active"></li>
+              <li class="dot"></li>
+              <li class="dot"></li>
+            </ul>
+            
+
+          </div>
+        
+          <script src="caroussel.js"></script>
+
+          <footer>
+            <nav class="footer_nav">
+                <p class="footer_nav_copyright">
+                    Copyright © 2022 CO2WEB <br>
+                    All rights reserved
+                </p>
+        
+                <ul class="footer_nav_list">
+                    <li class="footer_nav_item"><a href="accueil.html">Accueil</a> </li>
+                    <li class="footer_nav_item"><a href="mode-emploi.html" >Mode d'emploi</a> </li> 
+                    <li class="footer_nav_item"><a href="#" >Trouver un velib</a> </li>
+                    <li class="footer_nav_item"><a href="calculateur.html" > Calculateur</a> </li> 
+                    <li class="footer_nav_item"><a href="apropos.html" > A propos</a> </li>
+                    <li class="footer_nav_item"><a href="#" > Contact </a> </li>
+                </ul>
+           </nav>
+        </footer>
+        
+
+
+</body>
+</html>

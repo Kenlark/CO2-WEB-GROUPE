@@ -1,0 +1,341 @@
+ .smallNavActive5 {
+  opacity: 1;
+  visibility: visible;
+  height: 50vw;
+}
+.smallNavInActive5 {
+  opacity: 0;
+  visibility: hidden;
+  height: 0vw;
+} 
+
+@media (max-width: 1366px) {
+  .header5 {
+    .menu-lists5 {
+      .list-item5 {
+        padding: 14px;
+        .menu-link5 {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  .footer5 {
+    .footer_nav_list5 {
+      .list-item5 {
+        padding: 14px;
+        .menu-link5 {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
+  .main5 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    .slideItem5 {
+      gap: 25px;
+      .slide_img_wrapper_helper5 {
+        width: 30%;
+      }
+      .slide_text_box5 {
+        .heading15 {
+          font-size: 30px;
+        }
+        .paragraph5 {
+          font-size: 18px;
+          line-height: 40px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .header5 {
+    .menu-icon5 {
+      display: block;
+    }
+    ul.menu-lists5 {
+      display: none;
+    }
+    ul.menu-list-small-devices5 {
+      z-index: 99;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #f0f0f0;
+      position: fixed;
+      transition: all 300ms ease;
+      top: 75px;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 50vh;
+      padding: 0;
+      width: 100%;
+      border-radius: 0 0 25px 25px;
+      box-shadow: 0 4px 5px -2px rgba(0, 0, 0, 0.2);
+    }
+  }
+  .footer5 {
+    height: auto;
+    .footerWrapper5 {
+      flex-direction: column;
+      align-items: start;
+    }
+  }
+  .main5 {
+    padding-top: 48px;
+
+    .slider-container5 {
+      margin-top: 25px;
+    }
+    .slideItem5 {
+      gap: 25px;
+      flex-direction: column;
+      &:nth-child(even) {
+        flex-direction: column;
+      }
+
+      align-items: start;
+      .slide_img_wrapper_helper5 {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .slide_img_wrapper5 {
+          width: 70%;
+        }
+        .next5,
+        .prev5 {
+          display: block;
+        }
+      }
+      .slide_text_box5 {
+        .heading15 {
+          font-size: 40px;
+          position: absolute;
+          top: -9%;
+          left: 50%;
+          transform: translateX(-50%);
+          white-space: nowrap;
+          &::before {
+            content: unset;
+          }
+        }
+        .paragraph5 {
+          font-size: 20px;
+          line-height: unset;
+        }
+      }
+    }
+    .next5,
+    .prev5 {
+      display: none;
+    }
+  }
+}
+@media (max-width: 425px) {
+  .header5 {
+    .logo5 {
+      width: 32%;
+      margin-bottom: 13%;
+      margin-left: -4%;
+    }
+    ul.menu-lists5 {
+      .list-item5 {
+        padding: 12px;
+        .menu-link5 {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+  .footer5 {
+    .footer_nav_list5 {
+      .list-item5 {
+        padding: 12px;
+        .menu-link5 {
+          font-size: 18px;
+        }
+      }
+    }
+    .footer-copyright-text5 {
+      font-size: 18px;
+    }
+  }
+  .main5 {
+    .slideItem5 {
+      .slide_text_box5 {
+        .heading15 {
+          font-size: 30px;
+          top: -12%;
+        }
+        .paragraph5 {
+          font-size: 18px;
+          text-align: unset;
+        }
+      }
+    }
+    .next5,
+    .prev5 {
+      top: 25%;
+      width: 30px;
+    }
+  }
+
+  .navbar1 {
+    color: #3DAD5C;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 10px;
+    margin-left: 100px;
+    max-height: 50px;
+    margin-top: -13%;
+    margin-right: -55%;
+    padding-left: 13%;
+}
+
+  
+  .navbar1.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.menu-line { // 3 LIGNES DU BURGER
+    width: 19px;
+    border-radius: 3px;
+    height: 4px;
+    background-color: #3DAD5C;
+    margin-top: 3px;
+}
+
+.menu1 {
+    list-style-type: none;
+    padding: 0;
+    margin-left: 24%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin-left: 0;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: rgba(255, 255, 255,);
+    z-index: 1;
+    background-size: cover;
+}
+
+.menu1.active {
+    max-height: 800px;
+    transition: right 0.3s ease;
+    margin-right: 10px;
+    height: 100vh;
+    margin-top: -5%;
+    width: 100%;
+}
+
+.menu1 a {
+    text-decoration: none;
+    color: #019961;
+}
+
+.menu-item1 {
+    color: #3DAD5C;
+    opacity: 0; 
+    transition: opacity 0.3s ease;
+    margin-top: 10%;
+    text-align: center;
+    border-bottom: 1px solid;
+    height: 35px;
+    width: 300px;
+    margin-left: 8%;
+}
+
+.menu1.active .menu-item1 {
+    opacity: 1;
+}
+
+// animation 3 lignes into croix
+
+.menu-icon.active .menu-line:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+    transition: 0.3s ease; 
+
+}
+
+.menu-icon.active .menu-line:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-icon.active .menu-line:nth-child(3) {
+    transform: translateY(-6px) rotate(-45deg);
+    transition: 0.3s ease; 
+}
+
+.menu-icon.closed .menu-line:nth-child(1) {
+    transform: none;
+    transition: 0.3s ease; 
+}
+
+.menu-icon.closed .menu-line:nth-child(2) {
+    opacity: 1;
+}
+
+.menu-icon.closed .menu-line:nth-child(3) {
+    transform: none;
+    transition: 0.3s ease; 
+}
+
+.footer_nav1 {
+  margin-top: 40%;
+  border-top: 2px solid #79C258;
+  background-color: rgba(255, 255, 255,);
+}
+
+.footer_nav1 ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.footer_nav_copyright {
+  font-size: 1.1em;
+  margin-top: 10px;  
+  margin-bottom: -20px;
+  padding-left: 10px; 
+}
+
+.footer_nav_list li {
+  margin: 8px 0;
+  list-style-type: none;    
+}
+
+.footer_nav_item a {
+  padding-right: 15px;
+  text-decoration: none;
+  color: #3DAD5C;
+}
+
+.footer_nav_list {
+  max-width: 300px;
+  margin-top: 10%;
+  padding-left: 10px;
+}
+
+.main5 {
+  max-height: 300px;
+  background-color: rgba(255, 255, 255,);
+}
+}
