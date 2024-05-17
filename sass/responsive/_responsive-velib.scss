@@ -1,0 +1,65 @@
+
+.velib-countdown {
+    width: 25%;
+    height: 25%;
+    margin: 15% 35%;
+    border: 2pt solide tomato;   
+  }
+  
+  .countdown {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    color: rgb(20, 20, 20);
+    gap: 15px;
+    margin: 20px;
+    border: 2pt solide yellow;  
+  }
+  
+  .titlePageNotFinished {
+    display: grid;
+    grid-column: 4 span;
+    text-align: center;
+    font-size: 1.6em;
+  }
+
+.velibSeptembre {
+    display: grid;
+    grid-column: 4 span;
+    text-align: center;
+    font-size: 0.7em;
+    padding: 10px;
+} 
+  
+  .box {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    background-color: $color-darkergreen;
+    color: white;
+  }
+  
+  .value {
+    font-size: 1.5em;
+    font-weight: 600;
+  }
+  
+  .name {
+    font-size: 0.8em;
+  }
+  
+
+// Reponsive Tablete
+@media screen and (min-width: 362px) and (max-width: 770px)  {
+    .velib-countdown {
+        margin: 50% 35%; 
+      }
+}   
+
+
+// Reponsive Mobile
+@media screen and (max-width: 361px) {    
+    .velib-countdown {
+        margin: 30% 8%; 
+      }
+
+} 
