@@ -263,6 +263,10 @@ ul li a.active {
         margin-left: 8px;
     }
 
+    .header_nav_acc .header_nav_item:first-child {
+        display: none;
+    }
+
     .header_nav_acc {
         position: absolute;
         /* z-index: -1; */
