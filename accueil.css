@@ -269,10 +269,9 @@ ul li a.active {
 
     .header_nav_acc {
         position: absolute;
-        /* z-index: -1; */
         width: 100%;
         top: 0;
-        box-shadow: 1px 1px 1px 1px rgb(200, 200, 200);
+        left: 22%;
     }
 
     .header_nav_acc ul {
@@ -281,7 +280,7 @@ ul li a.active {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: flex-start;
-        margin-left: 140px;
+        margin-left: -3%;
     }
 
     .header_nav_list_acc li {
