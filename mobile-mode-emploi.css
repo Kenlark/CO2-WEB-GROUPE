@@ -10,6 +10,9 @@
         opacity: 80%;
     }
 
+    ul li a.active {
+        font-weight: bold;
+      }
 @media screen and (max-width: 360px) {
 
     .navbar {
@@ -258,6 +261,11 @@
         max-width: 300px;
         margin-top: 7%;
         padding-left: 10px;
+    }
+
+    .last-slide {
+        transition: transform 0.3s; /* Réinitialiser la transition */
+        transform: translateX(0%);
     }
 }
 
