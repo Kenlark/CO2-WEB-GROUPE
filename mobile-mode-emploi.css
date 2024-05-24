@@ -262,11 +262,6 @@
         margin-top: 7%;
         padding-left: 10px;
     }
-
-    .last-slide {
-        transition: transform 0.3s; /* Réinitialiser la transition */
-        transform: translateX(0%);
-    }
 }
 
 @media screen and (min-width: 361px) and (max-width: 768px) {
@@ -316,7 +311,8 @@
     .header_nav_emploi{
         position: relative;
         bottom: 80px;
-        left: 50px;
+        left: 80px;
+        width: 500px;
     }
 
     .header_nav_emploi ul {
@@ -326,6 +322,7 @@
         flex-wrap: wrap;
         justify-content: flex-start;
         margin-left: 12%;
+        width: 600px;
     }
 
     .header_nav_list_emploi li {
@@ -373,41 +370,38 @@
     }
         
 
-    .footer_nav {
-        display: none;
-    }
-    
-    .footer_nav ul {
+    .footer_nav2 ul {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: flex-start;
-        width: 620px;
+        justify-content: flex-end;
     }
-    
+
     .footer_nav_copyright2 {
         display: none;
     }
-        
-    .footer_nav_list li {
-        margin: 4px 0;
-        list-style-type: none;    
-    }
-    
-    .footer_nav_item a {
-        padding-right: 5px;
-        text-decoration: none;
-        color: #3DAD5C;
-    }
-    
-    .footer_nav_list {
-        max-width: 700px;
+
+    .footer_nav2 {
+        position: absolute;
         margin-top: 10%;
-        padding-left: 10px;
+        border-top: 2px solid #79C258;
+        width: 100%;
     }
 
     .footer_nav_list2 li {
-        display: none;   
+        margin: 8px 0;
+        list-style-type: none;
+    }
+
+    .footer_nav_item2 a {
+        padding-right: 15px;
+        text-decoration: none;
+        color: #3DAD5C;
+    }
+
+    .footer_nav_list2 {
+        max-width: 100%;
+        padding-right: 1%;
     }
 
 }
@@ -440,7 +434,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: flex-start;
-        width: 1366px;
+        width: 1000px;
         margin-left: 12%;
     }
 
@@ -473,7 +467,6 @@
         overflow: hidden;
         padding-top: 50px;
         padding-left: 300px;
-        padding-bottom: 200px;
         padding-right: 280px;
     }
 
@@ -535,7 +528,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: flex-end;
-        margin-top: 12%;
+        margin-top: 13%;
     }
     
     .footer_nav_copyright2 {

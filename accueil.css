@@ -260,7 +260,7 @@ ul li a.active {
     }
 
     .image-header-logo {
-        margin-left: 8px;
+        margin-left: 5%;
     }
 
     .header_nav_acc .header_nav_item:first-child {
@@ -269,7 +269,6 @@ ul li a.active {
 
     .header_nav_acc {
         position: absolute;
-        width: 100%;
         top: 0;
         left: 22%;
     }
@@ -280,7 +279,8 @@ ul li a.active {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: flex-start;
-        margin-left: -3%;
+        margin-left: 3%;
+        width: 530px;
     }
 
     .header_nav_list_acc li {
@@ -388,8 +388,7 @@ ul li a.active {
 
     .footer_nav {
         position: absolute;
-        bottom: 0;
-        margin-top: 20%;
+        margin-top: 87%;
         border-top: 2px solid #79C258;
         width: 100%;
     }
@@ -585,7 +584,7 @@ ul li a.active {
     }
 
     .image-header-logo {
-        margin-left: 8px;
+        margin-left: 5%;
     }
 
     .header_nav_acc {
@@ -601,7 +600,7 @@ ul li a.active {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: flex-start;
-        margin-left: 140px;
+        margin-left: 14%;
     }
 
     .header_nav_list_acc li {
