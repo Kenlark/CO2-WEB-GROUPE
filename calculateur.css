@@ -1,0 +1,889 @@
+* {
+    font-family: "roboto";
+    font-size: large;
+}
+body {
+    background-color: white  
+}
+#burguer {
+    color:#019961;
+    display: none;
+}
+.image-header-logo {
+    width: 7%;
+    margin-top: 3px;
+    margin-left: 7%;
+}
+
+.header_nav_emploi{
+    position: absolute;
+    width: 1912px;
+    max-width: 1920px;
+    top: 0;
+    box-shadow: 1px 1px 1px 1px rgb(200, 200, 200);
+}
+
+.header_nav_emploi ul {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 1366px;
+    margin-left: 15%;
+}
+
+.header_nav_list_emploi li {
+    margin: 4px 0;
+    list-style-type: none; 
+}
+
+.header_nav_item a {
+    padding-right: 40px;
+    text-decoration: none;
+    color: #3DAD5C;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Formulaire */
+form {
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+fieldset {
+    border: 0;
+    padding-top: 30px;
+}
+
+/*  fenetre de saisir de données */
+.boite_saisir {
+    border: none;
+    border-bottom: 2px solid rgb(202, 200, 200, 0.5);
+}
+p .distance-parcourue , p .jours-travailles {
+    font-size: 1em;
+    padding: 0%;
+  }
+
+.notice {
+    font-size: 0.7em;
+    width: 70%;   
+    margin-left: 15%;        
+    font-size: 0.7em;
+    margin-bottom: 20px;
+}
+
+
+/* Enlever les fleches : Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+   
+ /* Style du bouton du formulaire */
+ .btn-mobile , .btn-desktop {
+    background-image: linear-gradient(to right, #B5D653 ,  #019961 );
+    color: white;
+    box-shadow: 0px 5px 10px #3DAD5C;
+    border-radius: 25px;
+    margin-left: 15%;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+   }
+   
+.btn-mobile {
+    width: 250px; 
+    height: 50px;
+    display: none;
+}
+.btn-desktop {
+    width: 200px;
+    height: 40px;
+   }
+
+.btn-mobile:hover , .btn-desktop:hover {
+    background: #019961;
+    cursor: pointer;
+} 
+/*  Style ligne menu en pied de page  */
+.footer_nav_list li{
+    list-style-type: none;
+}
+
+/*  Style de chaque anchor en pied de page  */
+.footer_nav_item a {
+    text-decoration: none;
+    color: #3DAD5C;
+}
+.footer_nav {
+    margin-top: 18%;
+    border-top: 2px solid #79C258;
+}
+/* Disposition du menu en pied de page */
+.footer_nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;   
+    gap: 20px;
+    }
+/* text copyright en pied de page */
+    .footer_nav_copyright {
+        display: none;
+}
+.footer_nav {
+    border-top: 2px solid #79C258;
+}
+/*   Style de chaque anchor en pied de page  */
+.footer_nav_item a {
+    font-size: large;
+    font-weight: 400;
+    margin-right: 30px;
+ }
+
+/* Reponsive Notebook */
+@media screen and (min-width: 771px) and (max-width: 1370px) {
+    .image-header-logo {
+        width: 9%;
+        margin-top: 3px;
+        margin-left: 7%;
+    }
+    
+    .header_nav_emploi{
+        position: absolute;
+        width: 1360px;
+        max-width: 1366px;
+        top: 0;
+        box-shadow: 1px 1px 1px 1px rgb(200, 200, 200);
+    }
+    
+    .header_nav_emploi ul {
+        margin-top: 16px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        width: 1000px;
+        margin-left: 18%;
+    }
+    
+    .header_nav_list_emploi li {
+        margin: 4px 0;
+        list-style-type: none; 
+    }
+    
+    .header_nav_item a {
+        padding-right: 40px;
+        text-decoration: none;
+        color: #3DAD5C;
+    }
+    
+    a:hover {
+        text-decoration: underline;
+    }
+    .menu {
+        display:none;
+       }
+/* Titles */
+    .titre-mobile {
+        display: none;
+    }
+    .titre-desktop {
+        margin-top: 4%;
+        text-align: center;
+    }
+/* figures and drawings */
+.trois-feuilles {
+    width: 20%;
+    position: absolute;
+    left: 120px;
+    top: 120px;
+}
+.une-feuille {
+    width: 20%;
+    position: absolute;
+    top: 310px;
+    left: 60px;
+}
+.groupe-feuilles {
+    width: 20%;
+    position: absolute;
+    top: 300px;
+    left: 990px;
+
+}
+.circle1 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: white;
+    border: 20px solid #019961;
+    position: absolute;
+    top: 180px;
+    left: 1000px;
+  }
+  .circle2 {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 20px solid #79C258;
+    position: absolute;
+    top: 110px;
+    left: 1150px;
+  }
+  .circle3 {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 20px solid #B5D653;
+    position: absolute;
+    top: 220px;
+    left: 1160px;
+  }
+
+ /* Disposition du menu en pied de page */
+ .footer_nav_list li{
+    list-style-type: none;
+}
+
+/*  Style de chaque anchor en pied de page  */
+.footer_nav_item a {
+    text-decoration: none;
+    color: #3DAD5C;
+}
+.footer_nav {
+    margin-top: 41%;
+    border-top: 2px solid #79C258;
+}
+/* Disposition du menu en pied de page */
+.footer_nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;   
+    gap: 20px;
+    }
+/* text copyright en pied de page */
+    .footer_nav_copyright {
+        display: none;
+}
+.footer_nav {
+    border-top: 2px solid #79C258;
+}
+/*   Style de chaque anchor en pied de page  */
+.footer_nav_item a {
+    font-size: large;
+    font-weight: 400;
+    margin-right: 30px;
+ }
+
+
+/* text copyright en pied de page */
+        .footer_nav_copyright {
+        display: none;
+ }
+   
+/*   Style de chaque anchor en pied de page  */
+  .footer_nav_item a {
+     margin-right: 20px;
+  }
+
+ /* Formulaire */
+form  {
+    width: 60%;
+    background-color: white;
+    position: absolute;
+    top: 260px;
+    left: 20%;
+}  
+label {
+    margin-left: 15%;
+}
+ /*  fenetre de saisir de données */
+.boite_saisir {
+    width: 70%;
+    margin-left: 15%;
+    height: 50px; 
+    margin-bottom: 20px;
+}
+.distanceDesktopLabel {
+    display: none;
+}
+.distanceMobileLabel {
+    text-align: center;
+}
+.daysDesktopLabel {
+    display: none;
+}
+.daysMobileLabel {
+    text-align: center;
+}
+ .btn-mobile , .btn-desktop {
+    height: 50px;
+    margin: 10px 40%;
+    font-size: 1.5em;
+   }
+
+}
+
+/*  Reponsive Tablete */
+@media screen and (min-width: 362px) and (max-width: 770px)  {
+    .titre-mobile {
+        display: none;
+    }
+    .titre-desktop {
+        margin-top: 40px;
+        text-align: center;
+        font-size: 1.8em;
+        font-weight: 600;
+    }
+    .header_nav ul {
+         margin: 0%;  
+        justify-content: space-around;   
+    }
+    .logo {
+        padding-right: 10px;
+    }
+    .image-header-logo {
+        width: 16%;
+        margin-top: 4px;
+        margin-left: 4%;
+    }
+
+    .header_nav_emploi .header_nav_item:first-child {
+        display: none;
+    }
+    
+    .header_nav_emploi{
+        position: absolute;
+        width: 770px;
+        max-width: 770px;
+        top: 0;
+        box-shadow: 1px 1px 1px 1px rgb(200, 200, 200);
+    }
+    
+    .header_nav_emploi ul {
+        margin-top: 16px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        width: 590px;
+        margin-left: 18%;
+    }
+    
+    .header_nav_list_emploi li {
+        margin: 4px 0;
+        list-style-type: none; 
+    }
+    
+    .header_nav_item a {
+        padding-right: 20px;
+        text-decoration: none;
+        color: #3DAD5C;
+    }
+    
+    a:hover {
+        text-decoration: underline;
+    }
+    .menu {
+        display:none;
+       }
+    
+/*  figures and drawings */
+.trois-feuilles {
+    width: 25%;
+    position: absolute;
+    left: 30px;
+    top: 230px;
+}
+.une-feuille {
+    width: 25%;
+    position: absolute;
+    top: 390px;
+    left: 20px;
+}
+.groupe-feuilles {
+    width: 25%;
+    position: absolute;
+    top: 380px;
+    left: 550px;
+
+}
+.circle1 {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: white;
+    border: 15px solid #019961;
+    position: absolute;
+    top: 220px;
+    left: 550px;
+  } 
+  .circle2 {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 15px solid #79C258;
+    position: absolute;
+    top: 200px;
+    left: 660px;
+  }
+  .circle3 {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 15px solid #B5D653;
+    position: absolute;
+    top: 300px;
+    left: 670px;
+  }
+/*  Formulaire  */
+form  {
+    width: 60%;
+    background-color: white;
+    position: absolute;
+    top: 260px;
+    left: 20%;
+}  
+/*  fenetre de saisir de données  */
+.boite_saisir {
+    width: 70%;
+    margin-left: 15%;
+    height: 40px; 
+    margin-bottom: 20px; 
+}
+
+.distanceDesktopLabel {
+    display: none;
+}
+.distanceMobileLabel {
+    margin-left: 15%;
+}
+.daysDesktopLabel {
+    display: none;
+}
+.daysMobileLabel {
+    margin-left: 15%;
+}
+ /* Style du bouton du formulaire */
+ .btn-mobile , .btn-desktop {
+    margin: 20px 25%;
+   }
+
+   .footer_nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.footer_nav_copyright {
+    display: none;
+}
+
+.footer_nav {
+    position: absolute;
+    margin-top: 10%;
+    border-top: 2px solid #79C258;
+    width: 100%;
+}
+
+.footer_nav_list li {
+    margin: 8px 0;
+    list-style-type: none;
+}
+
+.footer_nav_item a {
+    padding-right: 15px;
+    text-decoration: none;
+    color: #3DAD5C;
+}
+
+.footer_nav_list {
+    max-width: 100%;
+    padding-right: 1%;
+}
+
+}
+/* // Reponsive Desktop */
+@media screen and (min-width: 1900px) {
+
+    ul li a.active {
+        font-weight: bold;
+    }
+
+    .header_nav_list li  {
+        padding-right: 60px;
+    }
+    .logo {
+        padding-right: 40px;
+    }    
+    .header_nav_list li a {
+        font-size: 1.3em;
+    }
+    .menu {
+        display:none;
+       }
+
+/* // Titles */
+    .titre-mobile {
+        display: none;
+    }
+    .titre-desktop {
+        margin-top: 50px;
+        text-align: center;
+        font-size: 2.5em;
+        font-weight: 600;
+    }
+/* // figures and drawings */
+    .trois-feuilles {
+        width: 15%;
+        position: absolute;
+        left: 320px;
+        top: 120px;
+    }
+    .une-feuille {
+        width: 15%;
+        position: absolute;
+        top: 310px;
+        left: 260px;
+    }
+    .groupe-feuilles {
+        width: 15%;
+        position: absolute;
+        top: 320px;
+        left: 1330px;
+    }
+    .circle1 {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background: white;
+        border: 20px solid #019961;
+        position: absolute;
+        top: 180px;
+        left: 1370px;
+      }
+      .circle2 {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        border: 20px solid #79C258;
+        position: absolute;
+        top: 120px;
+        left: 1520px;
+      }
+      .circle3 {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: 20px solid #B5D653;
+        position: absolute;
+        top: 230px;
+        left: 1530px;
+      }
+      /* Formulaire */
+    form  {
+        width: 50%;
+        background-color: white;
+        position: absolute;
+        top: 260px;
+        left: 25%;
+    }
+    .distanceDesktopLabel {
+        margin-left: 15%;
+        font-size: 1.3em;
+    }
+    .distanceMobileLabel {
+        display: none;
+    }
+    .daysDesktopLabel {
+        margin-left: 15%;
+        font-size: 1.3em;
+    }
+    .daysMobileLabel {
+        display: none;
+    }
+    /*  fenetre de saisir de données */
+    .boite_saisir {
+        width: 70%;
+        margin-left: 15%;
+        height: 40px; 
+        margin-bottom: 30px; 
+    }
+    .btn-mobile , .btn-desktop {
+        height: 60px;
+        margin-left: 40%;
+        margin-bottom: 30px;
+        font-size: 1.6em;
+       }
+
+ /*  Style ligne menu en pied de page  */
+.footer_nav_list li{
+    list-style-type: none;
+}
+
+/*  Style de chaque anchor en pied de page  */
+.footer_nav_item a {
+    text-decoration: none;
+    color: #3DAD5C;
+}
+.footer_nav {
+    margin-top: 35%;
+    border-top: 2px solid #79C258;
+}
+/* Disposition du menu en pied de page */
+.footer_nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;   
+    gap: 20px;
+    }
+/* text copyright en pied de page */
+    .footer_nav_copyright {
+        display: none;
+}
+.footer_nav {
+    border-top: 2px solid #79C258;
+}
+/*   Style de chaque anchor en pied de page  */
+.footer_nav_item a {
+    font-size: large;
+    font-weight: 400;
+    margin-right: 30px;
+ }
+
+}  
+
+/*  Reponsive Mobile */
+@media screen and (max-width: 361px) {
+    
+    .header_nav li {
+     display: none;
+    } 
+     /*   Redimensionament du Logo en haut de page */
+
+    .logo {
+        width: 30%;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    } 
+ /*     Titles */
+     .titre-mobile {
+         text-align: left;
+         margin: 20px;
+         font-weight: 600;
+     }
+     .titre-desktop {
+         display: none;
+     }
+/*   figures and drawings */
+ .trois-feuilles {
+     display: none;
+ }
+ .une-feuille {
+     display: none;
+ }
+ .groupe-feuilles {
+     display: none;
+ }
+ .circle1 {
+     display: none;
+   }
+   .circle2 {
+     display: none;
+   }
+   .circle3 {
+     display: none;
+   }   
+ 
+    .footer_nav_list {
+     padding-left: 15px;
+ }
+ 
+     /*  Disposition du menu en pied de page */
+    .footer_nav ul{
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap; 
+     justify-content: flex-start;  
+     }
+ 
+ 
+     /*  text copyright en pied de page */
+     .footer_nav_copyright {
+     border-top: 3px solid #79C258;
+     font-size: 0.9em;
+     padding: 10px 15px;
+     }
+ 
+     /* // Distance entre pied de page et formulaire */
+     .footer_nav {
+         margin-top: 80px;
+     }
+ 
+     /* // Style ligne menu en pied de page  */
+     .footer_nav_list li{
+         margin: 8px 0;
+     }
+     /* // Style de chaque anchor en pied de page  */
+     .footer_nav_item a {
+         padding-right: 10px;
+     }
+      /* Formulaire */
+     form {
+         margin: 10px;
+     }
+      /*  fenetre de saisir de données */
+     .boite_saisir {
+         width: 90%;
+         height: 40px;
+         margin: 20px;
+     }
+     .distanceDesktopLabel {
+         display: none;
+     }
+     .distanceMobileLabel {
+         text-align: center;
+         margin: 20px;
+     }
+     .daysDesktopLabel {
+         display: none;
+     }
+     .daysMobileLabel {
+         text-align: center;
+        margin: 20px;
+
+     }
+     /* // Style du bouton du formulaire */
+
+     .btn-mobile {
+        display: block;
+    }
+    .btn-desktop {
+        display: none;
+       }
+     .notice {
+         margin-bottom: 20px;
+     }   
+
+         /* Menu burguer */
+         .navbar {
+            color: #3DAD5C;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            padding: 10px;
+            top: 0;
+            right: 10px;
+            bottom: 0;
+            max-height: 50px;
+            /* margin-top: -17%; */
+            background-color: rgba(255, 255, 255,);
+        }
+        
+        .navbar.active {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+        
+        .menu-line { 
+            width: 19px;
+            border-radius: 3px;
+            height: 4px;
+            background-color: #3DAD5C;
+            margin-top: 3px;
+        }
+        
+        .menu {
+            list-style-type: none;
+            padding: 0;
+            margin-left: 24%;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+            margin-left: 0;
+            position: absolute;
+            top: 60px;
+            right: 0;
+            background-color: white;
+            z-index: 1;
+            background-size: cover;
+        }
+        
+        .menu.active {
+            max-height: 800px;
+            right: -10px;
+            transition: right 0.3s ease;
+            margin-right: 10px;
+            height: 100vh;
+            margin-top: 1%;
+        }
+        
+        
+        .menu a {
+            text-decoration: none;
+            color: #019961;
+        }
+        
+        .menu-item {
+            color: #3DAD5C;
+            opacity: 0; 
+            transition: opacity 0.3s ease;
+            margin-top: 10%;
+            text-align: center;
+            border-bottom: 1px solid;
+            height: 35px;
+            width: 300px;
+            margin-left: 8%;
+        }
+        
+        .menu.active .menu-item {
+            opacity: 1;
+        }
+        
+        
+        
+        .menu-icon.active .menu-line:nth-child(1) {
+            transform: translateY(8px) rotate(45deg);
+            transition: 0.3s ease; 
+        
+        }
+        
+        .menu-icon.active .menu-line:nth-child(2) {
+            opacity: 0;
+        }
+        
+        .menu-icon.active .menu-line:nth-child(3) {
+            transform: translateY(-6px) rotate(-45deg);
+            transition: 0.3s ease; 
+        }
+        
+        .menu-icon.closed .menu-line:nth-child(1) {
+            transform: none;
+            transition: 0.3s ease; 
+        }
+        
+        .menu-icon.closed .menu-line:nth-child(2) {
+            opacity: 1;
+        }
+        
+        .menu-icon.closed .menu-line:nth-child(3) {
+            transform: none;
+            transition: 0.3s ease; 
+        }
+ 
+ }
