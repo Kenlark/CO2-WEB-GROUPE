@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <title>A propos</title>
+    <link rel="stylesheet" href="apropos.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="#">
+          <img src="images/logo/CO2-logo.svg" alt="Logo" class="image-header-logo">
+        </a>
+      </div>
+
+      <div class="menu-icon" id="hamburger">
+        <img src="./images/hamburger.svg" alt="menu-icon" />
+      </div>
+      <div class="header_nav">
+        <ul class="header_nav_list">
+            <li class="header_nav_item"><a href="accueil.html">Accueil</a> </li>
+            <li class="header_nav_item"><a href="mode-emploi.html">Mode d'emploi</a> </li> 
+            <li class="header_nav_item"><a href="velib.html">Trouver un velib</a> </li>
+            <li class="header_nav_item"><a href="calculateur.html"> Calculateur</a> </li> 
+            <li class="header_nav_item"><a href="apropos.html"> A propos</a> </li>
+            <li class="header_nav_item"><a href="#"> Contact </a> </li>
+        </ul>
+        </div>
+        <div class="navbar">
+          <div class="menu-icon1" onclick="toggleMenu()">
+              <div class="menu-line"></div>
+              <div class="menu-line"></div>
+              <div class="menu-line"></div>
+          </div>
+      </div>
+      <ul class="menu" id="menu">
+          <li class="menu-item"><a href="accueil.html"> <strong><span class="menu-taille">Acceuil</span></strong></a></li>
+          <li class="menu-item"><a href="mode-emploi.html"><span class="menu-taille">Mode d'emploi</span></a></li>
+          <li class="menu-item"><a href="#"><span class="menu-taille">Trouver un velib</span></a></li>
+          <li class="menu-item"><a href="#"><span class="menu-taille">Calculateur</span></a></li>
+          <li class="menu-item"><a href="#"><span class="menu-taille">A propos</span></a></li>
+          <li class="menu-item"><a href="#"><span class="menu-taille">Contact</span></a></li>
+      </ul>
+      <script src="font-bold.js"></script>
+      <script src="burger-apropos.js"></script>
+    </header>
+    <main>
+      <div class="slider-container">
+        <div class="slider">
+          <div id="slide-1" class="slideItem active">
+            <div class="slide_img_wrapper_helper">
+              <figure class="slide_img_wrapper">
+                <img src="images/computer.svg" alt="Image 1" />
+              </figure>
+              <div class="next">
+                <img src="./images/Chevron.svg" alt="Chevron" />
+              </div>
+            </div>
+            <div class="slide_text_box">
+              <h1>À propos du projet</h1>
+              <p>
+                Arcu, ultrices amet, ac rhoncus eget egestas diam a malesuada
+                tristique blandit elementum dapibus proin pretium rhoncus,
+                viverra sagittis libero, libero varius accumsan ridiculus amet
+                nam duis sit vestibulum nibh eget ultrices magna facilisis
+                potenti
+              </p>
+
+              <div class="gradient-line"></div>
+              <p>
+                Aenean egestas fermentum, at elementum ut ut eu, feugiat sit
+                feugiat morbi id ipsum tincidunt
+              </p>
+            </div>
+          </div>
+          <div id="slide-2" class="slideItem">
+            <div class="slide_img_wrapper_helper">
+              <div class="prev">
+                <img src="./images/Chevron.svg" alt="Chevron" />
+              </div>
+              <figure class="slide_img_wrapper">
+                <img src="images/Groupe 146.svg" alt="Image 1" />
+              </figure>
+            </div>
+            <div class="slide_text_box">
+              <h1>À propos du projet</h1>
+              <p>
+                Arcu, ultrices amet, ac rhoncus eget egestas diam a malesuada
+                tristique blandit elementum dapibus proin pretium rhoncus,
+                viverra sagittis libero, libero varius accumsan ridiculus amet
+                nam duis sit vestibulum nibh eget ultrices magna facilisis
+                potenti
+              </p>
+
+              <div class="gradient-line"></div>
+              <p>
+                Aenean egestas fermentum, at elementum ut ut eu, feugiat sit
+                feugiat morbi id ipsum tincidunt
+              </p>
+            </div>
+          </div>
+        </div>
+                <div class="prev"><img src="./images/Chevron.svg" alt="Chevron" /></div>
+        <div class="next"><img src="./images/Chevron.svg" alt="Chevron" /></div>
+      </div>
+    </main>
+    <footer>
+      <nav class="footer_nav">
+        <p class="footer_nav_copyright">
+            Copyright © 2022 CO2WEB <br>
+            All rights reserved.
+        </p>
+
+        <ul class="footer_nav_list">
+            <li class="footer_nav_item"><a href="accueil.html">Accueil</a> </li>
+            <li class="footer_nav_item"><a href="mode-emploi.html">Mode d'emploi</a> </li>
+            <li class="footer_nav_item"><a href="#">Trouver un velib</a> </li>
+            <li class="footer_nav_item"><a href="#"> Calculateur</a> </li>
+            <li class="footer_nav_item"><a href="#"> A propos</a> </li>
+            <li class="footer_nav_item"><a href="#"> Contact </a> </li>
+        </ul>
+    </nav>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

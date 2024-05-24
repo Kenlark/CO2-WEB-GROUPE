@@ -589,8 +589,9 @@ ul li a.active {
 
     .header_nav_acc {
         position: absolute;
-        width: 100%;
+        width: 1918px;
         top: 0;
+        left: 0;
         box-shadow: 1px 1px 1px 1px rgb(200, 200, 200);
     }
 
@@ -621,7 +622,7 @@ ul li a.active {
         float: right;
         width: 40%;
         margin-top: 0.3em;
-        margin-right: -1%;
+        margin-right: -9px;
     }
 
     .txtacc {
@@ -728,6 +729,10 @@ ul li a.active {
     .footer_nav_list {
         max-width: 100%;
         padding-right: 1%;
+    }
+
+    a:hover {
+        text-decoration: underline;
     }
 
 }
