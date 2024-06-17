@@ -1,100 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page Velib</title>
-    <link rel="stylesheet" href="velib.css">
-    <script src="https://kit.fontawesome.com/6ab0564c66.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="velib.css" />
+    <script
+      src="https://kit.fontawesome.com/6ab0564c66.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header>
-      <a href="accueil.html"><img src="IMAGES/image-header.svg" alt="logo-header" class="image-header-logo"></a>
+      <a href="accueil.html"
+        ><img
+          src="IMAGES/image-header.svg"
+          alt="logo-header"
+          class="image-header-logo"
+      /></a>
       <div class="navbar">
         <div class="menu-icon" onclick="toggleMenu()">
           <div class="menu-line"></div>
           <div class="menu-line"></div>
           <div class="menu-line"></div>
         </div>
-    </div>
-    <ul class="menu" id="menu">
-      <li class="menu-item"><a href="accueil.html"> <strong><span class="menu-taille">Accueil</span></strong></a></li>
-      <li class="menu-item"><a href="mode-emploi.html"><span class="menu-taille">Mode d'emploi</span></a></li>
-      <li class="menu-item"><a href="velib.html"><span class="menu-taille">Trouver un velib</span></a></li>
-      <li class="menu-item"><a href="calculateur.html"><span class="menu-taille">Calculateur</span></a></li>
-      <li class="menu-item"><a href="apropos.html"><span class="menu-taille">A propos</span></a></li>
-      <li class="menu-item"><a href="contact.html"><span class="menu-taille">Contact</span></a></li>  
-  </ul>
-    <div class="header_nav_emploi">
-      <ul class="header_nav_list_emploi">
-          <li class="header_nav_item"><a href="accueil.html" >Accueil</a> </li>
-          <li class="header_nav_item"><a href="mode-emploi.html" >Mode d'emploi</a> </li> 
-          <li class="header_nav_item"><a href="velib.html" >Trouver un velib</a> </li>
-          <li class="header_nav_item"><a href="calculateur.html" > Calculateur</a> </li> 
-          <li class="header_nav_item"><a href="apropos.html" > A propos</a> </li>
-          <li class="header_nav_item"><a href="contact.html" > Contact </a> </li>
+      </div>
+      <ul class="menu" id="menu">
+        <li class="menu-item">
+          <a href="index.html">
+            <strong><span class="menu-taille">Accueil</span></strong></a
+          >
+        </li>
+        <li class="menu-item">
+          <a href="mode-emploi.html"
+            ><span class="menu-taille">Mode d'emploi</span></a
+          >
+        </li>
+        <li class="menu-item">
+          <a href="velib.html"
+            ><span class="menu-taille">Trouver un velib</span></a
+          >
+        </li>
+        <li class="menu-item">
+          <a href="calculateur.html"
+            ><span class="menu-taille">Calculateur</span></a
+          >
+        </li>
+        <li class="menu-item">
+          <a href="apropos.html"><span class="menu-taille">A propos</span></a>
+        </li>
+        <li class="menu-item">
+          <a href="contact.html"><span class="menu-taille">Contact</span></a>
+        </li>
       </ul>
-    </div>
-    <script src="font-bold.js"></script>
+      <div class="header_nav_emploi">
+        <ul class="header_nav_list_emploi">
+          <li class="header_nav_item"><a href="index.html">Accueil</a></li>
+          <li class="header_nav_item">
+            <a href="mode-emploi.html">Mode d'emploi</a>
+          </li>
+          <li class="header_nav_item">
+            <a href="velib.html">Trouver un velib</a>
+          </li>
+          <li class="header_nav_item">
+            <a href="calculateur.html"> Calculateur</a>
+          </li>
+          <li class="header_nav_item"><a href="apropos.html"> A propos</a></li>
+          <li class="header_nav_item"><a href="contact.html"> Contact </a></li>
+        </ul>
+      </div>
+      <script src="font-bold.js"></script>
     </header>
     <main class="velib-countdown">
-        
-        <div class="countdown">
-            <div class="box">
-              <span class="value" data-days>00</span>
-              <span class="name">Jours</span>
-            </div>
-            <div class="box">
-              <span class="value" data-hours>00</span>
-              <span class="name">Heures</span>
-            </div>
-            <div class="box">
-              <span class="value" data-minutes>00</span>
-              <span class="name">Minutes</span>
-            </div>
-            <div class="box">
-              <span class="value" data-seconds>00</span>
-              <span class="name">Seconds</span>
-            </div>
-            <span class="titlePageNotFinished">Coming Soon</span>
-            <p class="velibSeptembre">La fonctionnalité de recherche de vélib est en cours de développement. Elle arrivera le 1er septembre 2024</p>
-          </div>
-                   
-          <script src="app-countdown.js" defer></script>
-          <script>
-                function toggleMenu() {
-                  const menu = document.getElementById('menu');
-                  menu.classList.toggle('active');
+      <div class="countdown">
+        <div class="box">
+          <span class="value" data-days>00</span>
+          <span class="name">Jours</span>
+        </div>
+        <div class="box">
+          <span class="value" data-hours>00</span>
+          <span class="name">Heures</span>
+        </div>
+        <div class="box">
+          <span class="value" data-minutes>00</span>
+          <span class="name">Minutes</span>
+        </div>
+        <div class="box">
+          <span class="value" data-seconds>00</span>
+          <span class="name">Seconds</span>
+        </div>
+        <span class="titlePageNotFinished">Coming Soon</span>
+        <p class="velibSeptembre">
+          La fonctionnalité de recherche de vélib est en cours de développement.
+          Elle arrivera le 1er septembre 2024
+        </p>
+      </div>
 
-                  const menuIcon = document.querySelector('.menu-icon');
-                  menuIcon.classList.toggle('active');
-    
-                  menuIcon.classList.toggle('closed', !menu.classList.contains('active'));
-   
-                }
-          </script>
+      <script src="app-countdown.js" defer></script>
+      <script>
+        function toggleMenu() {
+          const menu = document.getElementById("menu");
+          menu.classList.toggle("active");
 
+          const menuIcon = document.querySelector(".menu-icon");
+          menuIcon.classList.toggle("active");
 
+          menuIcon.classList.toggle(
+            "closed",
+            !menu.classList.contains("active")
+          );
+        }
+      </script>
     </main>
     <footer>
-        <nav class="footer_nav">
-            <p class="footer_nav_copyright">
-                &copy; Copyright 2022 CO2WEB <br>
-                All rights reserved            
-            </p>
-            <ul class="footer_nav_list">
-              <li class="footer_nav_item"><a href="accueil.html">Accueil</a> </li>
-              <li class="footer_nav_item"><a href="mode-emploi.html" >Mode d'emploi</a> </li> 
-              <li class="footer_nav_item"><a href="velib.html" >Trouver un velib</a> </li>
-              <li class="footer_nav_item"><a href="calculateur.html" > Calculateur</a> </li> 
-              <li class="footer_nav_item"><a href="apropos.html" > A propos</a> </li>
-              <li class="footer_nav_item"><a href="contact.html" > Contact </a> </li>
-          </ul>
-       </nav>
+      <nav class="footer_nav">
+        <p class="footer_nav_copyright">
+          &copy; Copyright 2022 CO2WEB <br />
+          All rights reserved
+        </p>
+        <ul class="footer_nav_list">
+          <li class="footer_nav_item"><a href="accueil.html">Accueil</a></li>
+          <li class="footer_nav_item">
+            <a href="mode-emploi.html">Mode d'emploi</a>
+          </li>
+          <li class="footer_nav_item">
+            <a href="velib.html">Trouver un velib</a>
+          </li>
+          <li class="footer_nav_item">
+            <a href="calculateur.html"> Calculateur</a>
+          </li>
+          <li class="footer_nav_item"><a href="apropos.html"> A propos</a></li>
+          <li class="footer_nav_item"><a href="contact.html"> Contact </a></li>
+        </ul>
+      </nav>
     </footer>
-</body>
+  </body>
 </html>
